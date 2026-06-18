@@ -1,0 +1,32 @@
+# Gyne-DEG Atlas - master workflow
+# Run: snakemake --use-conda --cores 2 -p
+# 8 GB note: keep --cores low (1-2). Counts are small; R memory spikes are the risk.
+
+import pandas as pd
+configfile: "config/config.yaml"
+
+samples = pd.read_csv(config["samplesheet"]).set_index("dataset_id", drop=False)
+strata  = pd.read_csv(config["strata"])
+DATASETS = list(samples.index)
+
+# meta-ready strata only (>= min_datasets). Single-dataset strata are handled descriptively.
+META = strata[strata["meta_ready"]=="yes"]
+STRATA_IDS = [f'{r.condition}__{r.tissue_primary}'.replace(" ","_").replace("/","-")
+              for r in META.itertuples()]
+
+wildcard_constraints:
+    dataset="|".join(DATASETS) if DATASETS else "NONE",
+
+rule all:
+    input:
+        expand("results/deg/{dataset}.deg.tsv", dataset=DATASETS),
+        expand("results/meta/{stratum}.meta.tsv", stratum=STRATA_IDS),
+        expand("results/enrich/{stratum}.enrich.tsv", stratum=STRATA_IDS),
+        "results/ml/panel_report.tsv",
+
+include: "rules/fetch.smk"
+include: "rules/deg_rnaseq.smk"
+include: "rules/deg_microarray.smk"
+include: "rules/meta.smk"
+include: "rules/enrich.smk"
+include: "rules/ml.smk"

@@ -1,0 +1,7 @@
+name: docking
+channels: [conda-forge, bioconda]
+dependencies:
+  - smina
+  - autodock-vina
+  - openbabel
+  - rdkit

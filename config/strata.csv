@@ -1,0 +1,18 @@
+condition,tissue_primary,n_datasets_estimate,meta_ready,priority,note,owner
+PCOS,Granulosa,24,yes,1,Canonical PCOS tissue; often IVF-stimulated - record stimulation status,
+Endometriosis,Endometrium(eutopic vs ectopic),88,yes,2,SPLIT eutopic vs ectopic; never mix the two comparisons,Sanika
+PCOS,Ovary(whole/other),48,yes,3,De-duplicate vs granulosa/cumulus/oocyte primary assignment,
+PCOS,Adipose,12,yes,4,Confounded by BMI/obesity - record BMI if available,Sanika
+PCOS,Blood/PBMC,10,yes,5,Systemic signal; separate whole-blood vs PBMC vs serum,Sanika
+PCOS,Endometrium,8,yes,6,Record menstrual cycle phase,
+PCOS,Oocyte,7,yes,7,,Sanika
+PCOS,Cumulus,7,yes,8,,Sanika
+Endometriosis,Ovary,35,yes,9,Endometrioma vs normal ovary - confirm,
+Endometriosis,Placenta/decidua,18,yes,10,Confirm relevance; may be pregnancy datasets,
+Adenomyosis,Endometrium,13,yes,11,Split eutopic vs lesion,Sanika
+PCOS,Skeletal muscle,4,yes,12,,
+Adenomyosis,Myometrium,4,yes,13,Lesion vs normal myometrium,
+Endometriosis,Cell line,6,separate,14,Do NOT mix with primary tissue,
+Endometriosis,Blood/PBMC,5,yes,15,,
+PCOS,Theca,1,no,99,Single dataset - descriptive DEG only,Sanika
+Adenomyosis,Myometrium-low,1,no,99,Descriptive only,

@@ -1,0 +1,4 @@
+dataset_id,condition,tissue_primary,subtissue,platform,technique,data_source,group_column,case_label,control_label,cycle_phase,notes
+GSE34526,PCOS,Granulosa,whole-GC,GPL6244,Microarray,GEO_matrix,group,PCOS,Control,NA,IVF-stimulated
+GSE199225,PCOS,Skeletal muscle,vastus,GPLxxxx,RNA-seq,recount3,group,PCOS,Control,NA,
+GSE6364,Endometriosis,Endometrium,eutopic,GPL570,Microarray,GEO_matrix,group,Endometriosis,Control,secretory,

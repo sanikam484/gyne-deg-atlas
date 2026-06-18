@@ -1,0 +1,20 @@
+# data & results are large / regenerable
+data/**
+!data/.gitkeep
+results/**
+!results/.gitkeep
+# raw sequence data must never be committed
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.sam
+*.cram
+# caches
+.snakemake/
+__pycache__/
+*.Rproj.user
+.Rhistory
+.RData
+.ipynb_checkpoints/
+*.log

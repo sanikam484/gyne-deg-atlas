@@ -1,0 +1,9 @@
+name: fetch
+channels: [conda-forge, bioconda]
+dependencies:
+  - bioconductor-recount3
+  - bioconductor-geoquery
+  - bioconductor-summarizedexperiment
+  - bioconductor-biobase
+  - r-optparse
+  - r-data.table

@@ -1,0 +1,8 @@
+name: deseq2
+channels: [conda-forge, bioconda]
+dependencies:
+  - bioconductor-deseq2
+  - bioconductor-edger
+  - bioconductor-recount3
+  - r-data.table
+  - r-matrixstats

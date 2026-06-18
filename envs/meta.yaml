@@ -1,0 +1,10 @@
+name: meta
+channels: [conda-forge, bioconda]
+dependencies:
+  - r-metafor
+  - r-robustrankaggreg
+  - bioconductor-clusterprofiler
+  - bioconductor-org.hs.eg.db
+  - bioconductor-stringdb
+  - r-igraph
+  - r-data.table

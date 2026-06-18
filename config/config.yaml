@@ -1,0 +1,15 @@
+# Central parameters. Edit paths/thresholds here; never hard-code in scripts.
+samplesheet: "config/samplesheet.csv"   # copy from samplesheet_template.csv and fill in
+strata:      "config/strata.csv"
+
+deg:
+  padj: 0.05
+  lfc: 1.0          # |log2FC| threshold
+meta:
+  min_datasets: 4   # a stratum needs >= this many datasets to be META-analysed
+  method: "RRA"     # RRA (robust rank aggregation) or REM (random-effects, metafor)
+enrich:
+  sources: ["GO:BP","KEGG","Reactome"]
+ml:
+  model: "elasticnet"
+  cv: "leave-one-dataset-out"   # cross-DATASET validation, not cross-sample
