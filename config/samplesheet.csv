@@ -1,6 +1,6 @@
 ﻿dataset_id,condition,tissue_primary,subtissue,platform, technique ,data_source,group_column,case_label,control_label,cycle_phase,notes
 GSE1615,PCOS,Theca cells,follicular theca ,GPL96;97, Microarray ,GEO_matrix,title,UNT-PCOS,UNT-NL,NA,total = 26 ;  10 PCOS vs 8 Control ;                     8 treatment samples VPL 
-GSE54250,PCOS,blood/serum,PBMC,GPL10558;8979, Microarray ,GEO_matrix,disease state,PCOS,healthy individual,NA,total = 16 ; 8 PCOS vs 8 control
+GSE54250,PCOS,blood/serum,PBMC,GPL10558;8979, Microarray ,GEO_matrix,diagnosis:ch1,Polycystic Ovarian Syndrome (PCOS),Healthy,NA,total = 16 ; 8 PCOS vs 8 control
 GSE155489,PCOS,cumulus granulosa ,cumulus,GPL20795, RNA-seq ,ARCHS4,disease state,PCOS,Control,NA,total=20; 6 PCOS vs 6 control (oocytes)              4 PCOS vs 4 control (cumulus granulosa)       IVF-derived oocytes and cumulus granulosa cells; dataset contains both oocytes and cumulus cells
 GSE249470,PCOS,placenta,decidua,GPL24676;11154,Microarray,GEO_matrix,disease state,PCOS,Control,NA,total=20; 5 PCOS vs 5 control (miRNA); 5 PCOS vs 5 control (ciRNA)                             
 GSE156067,PCOS,adipose tissue/ovary,subcutaneous abdominal adipose stem cell ,GPL20301, RNA-seq ,ARCHS4,disease status,PCOS,Control,NA,total=18; 9 PCOS vs 9 control
