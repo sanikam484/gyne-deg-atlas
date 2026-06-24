@@ -15,5 +15,5 @@ GPL34284",RNA-seq,salmon_workstation,group ,Endometriosis,Control,NA,total=20; 1
 GSE269530,Endometriosis,Endometrium,Stromal cells,"	
 GPL24676	", RNA-seq ,ARCHS4,group ,EUE,ECE,NA,"total=20; 10 EM (ectopic) vs 10 control (eutopic)                                                   EUE = Endometriosis Unaffected Endometrium (CONTROL)
 ECE = Endometriosis Case Endometrium (ENDOMETRIOSIS)"
-GSE185392,Adenomyosis,Endometrium,NA,GPL24676, RNA-seq ,ARCHS4,group ,Adenomyosis,Control,Receptive / Window of Implantation (WOI),total=20; 10 AM vs 10 control
+GSE185392,Adenomyosis,Endometrium,NA,GPL24676, RNA-seq ,ARCHS4,study group:ch1,adenomyosis case,control,Receptive / Window of Implantation (WOI),total=20; 10 AM vs 10 control
 GSE262302,Adenomyosis,Endometrium,exosomes derived from ectopic lesions,GPL24676, RNA-seq ,ARCHS4,group ,Adenomyosis,Control,NA,total=16; 8 AM vs 8 control
