@@ -18,5 +18,7 @@ GSE243158,Endometriosis,Endometrium,Stromal cells,GPL18573;24676,RNA-seq,ARCHS4,
 GSE243039,Endometriosis,Endometrium,Stromal cells,GPL24676,RNA-seq,ARCHS4,group,Endometriosis,Normal,day8,"Time-course dataset (Days 0, 2, 4, 6 and 8). For Phase 1 DEG analysis, only matched Day 8 samples were included (4 Endometriosis vs 4 Normal) to avoid confounding due to temporal gene expression changes. Earlier time points were excluded; disease vs control comparison was performed at the same time point."
 GSE288994,Endometriosis,Endometrium,Stromal cells,GPL24676,RNA-seq,ARCHS4,group,Endometriosis,Normal,NA,HOLD
 GSE299492,Endometriosis,Endometrium,Stromal cells,GPL24676,RNA-seq,ARCHS4,group,Endometriosis,Normal,NA,DROP (SINGLE CELL RNA SEQ DATASET)
+GSE106661,Endometriosis,Endometrium,uterus,GPL16791,RNA-seq,ARCHS4,group,Endometriosis,control,NA,"HOLD; GEO series matrix contains no expression matrix (0×16). Supplementary files are precomputed DEG tables, not raw counts. DESeq2 cannot be run without generating counts from SRA (SRP124589)."
+GSE87809,Endometriosis,Endometrium,Stromal cells,GPL11154,RNA-seq,recount3,disease_state,Endometriosis,Control,NA,total=18
 GSE185392,Adenomyosis,Endometrium,NA,GPL24676, RNA-seq ,ARCHS4,study group:ch1,adenomyosis case,control,Receptive / Window of Implantation (WOI),total=20; 10 AM vs 10 control
 GSE262302,Adenomyosis,Endometrium,exosomes derived from ectopic lesions,GPL24676, RNA-seq ,ARCHS4,characteristics_ch1,adenomyosis patients plasma exosomes,non-adenomyosis patients plasma exosomes,NA,total=16; 8 AM vs 8 control
