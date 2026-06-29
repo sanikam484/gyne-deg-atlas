@@ -1,18 +1,22 @@
-﻿dataset_id,condition,tissue_primary,subtissue,platform, technique ,data_source,group_column,case_label,control_label,cycle_phase,notes,,,,,,,,,
-GSE1615,PCOS,Theca cells,follicular theca ,GPL96;97, Microarray ,GEO_matrix,group,PCOS,Control,NA,total = 26 ;  10 PCOS vs 8 Control ;                     8 treatment samples VPL ,,,,,,,,,
-GSE54250,PCOS,blood/serum,PBMC,GPL10558;8979, Microarray ,GEO_matrix,group,PCOS,Control,NA,total = 16 ; 8 PCOS vs 8 control,,,,,,,,,
-GSE155489,PCOS,cumulus granulosa ,cumulus,GPL20795, RNA-seq ,ARCHS4,group ,PCOS,Control,NA,total=20; 6 PCOS vs 6 control (oocytes)              4 PCOS vs 4 control (cumulus granulosa)       IVF-derived oocytes and cumulus granulosa cells; dataset contains both oocytes and cumulus cells,,,,,,,,,
-GSE249470,PCOS,placenta,decidua,GPL24676;11154,Microarray,GEO_matrix,group ,PCOS,Control,NA,total=20; 5 PCOS vs 5 control (miRNA); 5 PCOS vs 5 control (ciRNA)                             ,,,,,,,,,
-GSE156067,PCOS,adipose tissue/ovary,subcutaneous abdominal adipose stem cell ,GPL20301, RNA-seq ,ARCHS4,group ,PCOS,Control,NA,total=18; 9 PCOS vs 9 control,,,,,,,,,
-GSE145461,PCOS,Follicular fluid,exosomes,GPL20301, RNA-seq ,ARCHS4,group ,PCOS,Control,NA,total=10; 5 PCOS vs 5 control,,,,,,,,,
-GSE141549,Endometriosis,Endometrium,eutopic,GPL13376;10558, Microarray ,GEO_matrix,group ,Endometriosis,Control,NA,total= 408; 115 EM vs 53 control,,,,,,,,,
-GSE51981,Endometriosis,Endometrium,eutopic,GPL570, Microarray ,GEO_matrix,group ,Endometriosis,Control,"proliferative, secretory","total=148; 111 EM vs 37 control  (mild endometriosis 34 , severe 77)",,,,,,,,,
-GSE134056,Endometriosis,Endometrium,eutopic,GPL18573, RNA-seq ,ARCHS4,group ,Endometriosis,Control,mixed,total=38; 16 EM vs 22 control,,,,,,,,,
+﻿dataset_id,condition,tissue_primary,subtissue,platform, technique ,data_source,group_column,case_label,control_label,cycle_phase,notes
+GSE1615,PCOS,Theca cells,follicular theca ,GPL96;97, Microarray ,GEO_matrix,title ,UNT-PCOS,UNT-NL,NA,total = 26 ;  10 PCOS vs 8 Control ;                     8 treatment samples VPL 
+GSE54250,PCOS,blood/serum,PBMC,GPL10558;8979, Microarray ,GEO_matrix,diagnosis:ch1,Polycystic Ovarian Syndrome (PCOS),Healthy,NA,total = 16 ; 8 PCOS vs 8 control
+GSE54248,PCOS,blood/serum,PBMC,GPL10558 , Microarray ,GEO_matrix,diagnosis:ch1,Polycystic Ovarian Syndrome (PCOS),Healthy,NA,total=8; 4 PCOS vs 4 healthy
+GSE262735,PCOS,blood/serum,PBMC,GPL20301,RNA-seq,ARCHS4,disease ,Pcos,Control,NA,total=8; 4 PCOS vs 4 healthy
+GSE141549,Endometriosis,Endometrium,eutopic,GPL13376;10558, Microarray ,GEO_matrix,group ,Endometriosis,Control,NA,DROP total= 408; 115 EM vs 53 control
+GSE51981,Endometriosis,Endometrium,eutopic,GPL570, Microarray ,GEO_matrix,endometriosis/no endometriosis:ch1 ,Endometriosis,Non-Endometriosis,"proliferative, secretory","total=148; 111 EM vs 37 control  (mild endometriosis 34 , severe 77)"
+GSE145701,Endometriosis,Endometrium,eutopic,GPL6244, Microarray ,GEO_matrix,disease state:ch1,Endometriosis stage IV,Normal,NA,"total=8; 4 EM vs 4 normal; GSE145701 was processed by first restricting the dataset to the vehicle-treated samples only (4 Normal and 4 Endometriosis Stage IV samples). This ensured that all samples were compared under the same experimental condition, eliminating confounding due to hormone treatments (E2, P4, and E2+P4). Differential expression analysis was then performed using the existing limma pipeline without modifying the analysis workflow."
+GSE134056,Endometriosis,Endometrium,eutopic,GPL18573, RNA-seq ,recount3,group ,disease,control,mixed,total=38; 16 EM vs 22 control
 GSE192636,Endometriosis,Granulosa,Ovarian endometriosis-associated granulosa cells,"	
-GPL24676", RNA-seq ,ARCHS4,group ,Endometriosis,Control,NA,total=10; 5 EM vs 5 control,,,,,,,,,
+GPL24676", RNA-seq ,ARCHS4,disease_state,endometriosis,control(normal),NA,total=10; 5 EM vs 5 control
 GSE303635,Endometriosis,Endometrium,Stromal cells,"	
-GPL34284", Microarray ,GEO_matrix,group ,Endometriosis,Control,NA,total=20; 15 EM(ectopic) vs  5 control (eutopic),,,,,,,,,
+GPL34284",RNA-seq,salmon_workstation,group ,Endometriosis,Control,NA,total=20; 15 EM(ectopic) vs  5 control (eutopic)
 GSE269530,Endometriosis,Endometrium,Stromal cells,"	
-GPL24676	", RNA-seq ,ARCHS4,group ,Endometriosis,Control,NA,total=20; 10 EM (ectopic) vs 10 control (eutopic),,,,,,,,,
-GSE185392,Adenomyosis,Endometrium,NA,GPL24676, RNA-seq ,ARCHS4,group ,Adenomyosis,Control,Receptive / Window of Implantation (WOI),total=20; 10 AM vs 10 control,,,,,,,,,
-GSE262302,Adenomyosis,Endometrium,exosomes derived from ectopic lesions,GPL24676, RNA-seq ,ARCHS4,group ,Adenomyosis,Control,NA,total=16; 8 AM vs 8 control,,,,,,,,,
+GPL24676", RNA-seq ,ARCHS4,group ,EUE,ECE,NA,total=20
+GSE75427,Endometriosis,Endometrium,Stromal cells,GPL13497;17077; 18402,Microarray,GEO_matrix,treatment:ch1,12d 10% charcoal-stripped heat-inactivated FBS,12d dibutyryl-cAMP and dienogest,NA,DROP; treatment study (dienogest/cAMP) — no healthy control group
+GSE243158,Endometriosis,Endometrium,Stromal cells,GPL18573;24676,RNA-seq,ARCHS4,group,Endometriosis,Normal,NA,HOLD
+GSE243039,Endometriosis,Endometrium,Stromal cells,GPL24676,RNA-seq,ARCHS4,group,Endometriosis,Normal,day8,"Time-course dataset (Days 0, 2, 4, 6 and 8). For Phase 1 DEG analysis, only matched Day 8 samples were included (4 Endometriosis vs 4 Normal) to avoid confounding due to temporal gene expression changes. Earlier time points were excluded; disease vs control comparison was performed at the same time point."
+GSE288994,Endometriosis,Endometrium,Stromal cells,GPL24676,RNA-seq,ARCHS4,group,Endometriosis,Normal,NA,HOLD
+GSE299492,Endometriosis,Endometrium,Stromal cells,GPL24676,RNA-seq,ARCHS4,group,Endometriosis,Normal,NA,DROP (SINGLE CELL RNA SEQ DATASET)
+GSE185392,Adenomyosis,Endometrium,NA,GPL24676, RNA-seq ,ARCHS4,study group:ch1,adenomyosis case,control,Receptive / Window of Implantation (WOI),total=20; 10 AM vs 10 control
+GSE262302,Adenomyosis,Endometrium,exosomes derived from ectopic lesions,GPL24676, RNA-seq ,ARCHS4,characteristics_ch1,adenomyosis patients plasma exosomes,non-adenomyosis patients plasma exosomes,NA,total=16; 8 AM vs 8 control
